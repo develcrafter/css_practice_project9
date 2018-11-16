@@ -1,0 +1,30 @@
+{
+  "name": "css_practice_project9",
+  "version": "1.0.0",
+  "description": "9th project for css practice from Nomad Coder.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develcrafter/css_practice_project9.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/develcrafter/css_practice_project9/issues"
+  },
+  "homepage": "https://github.com/develcrafter/css_practice_project9#readme",
+  "scripts": {
+    "start": "parcel pj9_clone1.html"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^6.4.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
+  }
+}
