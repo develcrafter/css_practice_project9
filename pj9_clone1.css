@@ -37,6 +37,7 @@ a {
     align-items: center;
 }
 
+
 .header__logo {
     font-size: 21px;
 }
@@ -127,12 +128,12 @@ a.collection__link.link--selected::before {
 }
 
 .main__collection-info {
-    margin-left: 110px;
+    margin-left: 122px;
 }
 
 .collection__title {
     /* line-height: 100px; */
-    font-size: 55px;
+    font-size: 47px;
 }
 
 .collection__title-group {
