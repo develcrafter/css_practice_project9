@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+:root {
+    --grayColor: #9e9e9e;
+    --blackColor: #212121;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html, body, main{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+
+    background-color: #fce4ec;
+    color: #212121;
+}
+
+.header {
+    /* padding: 13px 21px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 13px auto;
+    /* padding: 13px 21px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: lowercase;
+    font-weight: 600;
+
+}
+
+.header__logo {
+    font-size: 21px;
+}
+
+.header__navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+    grid-auto-flow: column;
+    grid-gap: 21px;
+    font-size: 13px;
+}
+
+.header__btn svg {
+    fill: var(--grayColor);
+}
+
+.header__btn:last-child {
+    text-transform: uppercase;
+    font-size: 13px;
+
+    margin-left: 21px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-auto-rows: 100vh;
+    align-items: center;
+}
+
+.main__column:first-child {
+    height: 100%;
+    background-image: url(https://i.pinimg.com/564x/bf/25/b6/bf25b6cdb4ad1cc9f2fcfa64613cde0d.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+/* 
+.main__photo {
+    height: 100%;
+} */
+
+.main__photo-dots {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translate(0, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.photo-dot {
+    margin-bottom: 8px;
+}
+
+.photo-dot:last-child {
+    margin-bottom: 0;
+}
+
+.photo-dot__link {
+    font-size: 13px;
+}
+
+.photo-dot .photo-dot__link::before{
+    content: "■";
+}
+
+.photo-dot__link.link--selected::before {
+    content: "□";
+}
+
+.main__column:last-child{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main__content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 89px;
+}
+
+.main__content .main__titles {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 144px;
+
+}
+
+.main__pages {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--grayColor);
+}
+
+.pages__current-page {
+    font-size: 2rem;
+    color: var(--blackColor); 
+}
+
+.main__btns {
+    background-color: white;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 13px;
+
+    fill: var(--grayColor);
+
+}
+
+.arrow__btn a {
+    color: var(--grayColor);
+}
+
+.social__btn:not(:last-child) {
+    margin-right: 3px;
+}
